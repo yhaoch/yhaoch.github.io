@@ -142,6 +142,27 @@
 <section class="post-list">
 	
     <div class='post-wrapper'>
+      <article class="post revealno-title">
+  <section class="meta">
+    
+    <time>
+      12月 23, 2017
+    </time>
+		
+  </section>
+  <section class="article typo">
+	  <p>#webpack<br>首先，要是用该命令应该：安装全局的包<br>‘’’bash<br>npm i -g webpack<br>‘’’</p>
+<h2 id="1-首先创建package-json"><a href="#1-首先创建package-json" class="headerlink" title="1. 首先创建package.json"></a>1. 首先创建package.json</h2><pre><code>使用npm init, 按照步骤进行设置，最终会获得一个package.json
+</code></pre><h2 id="2-dependencies-各种依赖。我们可以使用npm工具帮助我们在之前生成的package-json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm-install进行辅助安装，它会自己查找package-json文件，进行安装。"><a href="#2-dependencies-各种依赖。我们可以使用npm工具帮助我们在之前生成的package-json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm-install进行辅助安装，它会自己查找package-json文件，进行安装。" class="headerlink" title="2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装，它会自己查找package.json文件，进行安装。"></a>2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装，它会自己查找package.json文件，进行安装。</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2>
+
+    
+    
+    
+  </section>
+</article>
+    </div>
+  
+    <div class='post-wrapper'>
       <article class="post reveal">
   <section class="meta">
     
@@ -162,13 +183,22 @@
 <p>注意：序列是可以修改的，而元组是不可以的。</p>
 <h3 id="序列的操作"><a href="#序列的操作" class="headerlink" title="序列的操作"></a>序列的操作</h3><p>所有的序列都是可以进行某些特定的操作，包括：迭代（iteration），索引（indexing），分片（slicing），加（adding），乘（multiplying），计算长度，最大值，最小值等等。</p>
 <h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><p>访问某一个元素，索引0返回第一个，-1 返回最后一个元素<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">'Hello'</span></span><br><span class="line">str[<span class="number">0</span>]  <span class="comment">#'H'</span></span><br><span class="line">str[<span class="number">-1</span>]  <span class="comment">#'o'</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="分片"><a href="#分片" class="headerlink" title="分片"></a>分片</h4><p>访问一定范围内的元素，通过冒号隔开连个索引值。 <strong>注意：</strong> 返回值不包含最后的索引值本身。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">'Hello world python'</span></span><br><span class="line">str[<span class="number">1</span>:<span class="number">6</span>]  <span class="comment">#'ello '</span></span><br><span class="line">str[<span class="number">9</span>：<span class="number">-2</span>]  <span class="comment">#'ld pyth'</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="分片"><a href="#分片" class="headerlink" title="分片"></a>分片</h4><p>访问一定范围内的元素，通过冒号隔开连个索引值。 <strong>注意：</strong> 返回值不包含最后的索引值本身。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">'Hello world python'</span></span><br><span class="line">str[<span class="number">1</span>:<span class="number">6</span>]  <span class="comment">#'ello` '</span></span><br><span class="line">str[<span class="number">9</span>：<span class="number">-2</span>]  <span class="comment">#'ld pyth'</span></span><br></pre></td></tr></table></figure></p>
 <p>只要分片左边的索引值比它右边的晚出现在序列中，结果就是空。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">'Hello world python'</span></span><br><span class="line">str[<span class="number">-2</span>:<span class="number">0</span>]  <span class="comment">#'[]'</span></span><br></pre></td></tr></table></figure></p>
 <p>如果不填右边的索引值呢？ 分片就会包括到序列结尾的元素。对于不填写左边同样原理<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">'Hello world python'</span></span><br><span class="line">str[<span class="number">-2</span>:]  <span class="comment">#'on' </span></span><br><span class="line">str[:<span class="number">2</span>] <span class="comment">#'He'</span></span><br></pre></td></tr></table></figure></p>
 <p><strong>新的元素：</strong> 步长（step length）：上文不填写，默认步长为1. 当然可以进行设置，如2.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">'123456789'</span></span><br><span class="line">str[<span class="number">0</span>:<span class="number">7</span>:<span class="number">2</span>]  <span class="comment">#'135' </span></span><br><span class="line">str[::<span class="number">2</span>] <span class="comment">#'135'</span></span><br></pre></td></tr></table></figure></p>
 <p>步长不可为0，但可以为负数。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">'123456789'</span></span><br><span class="line">str[<span class="number">7</span>:<span class="number">0</span>:<span class="number">-1</span>]  <span class="comment">#'65432'</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h4 id="序列相加-使用加运算符，相同类型可以进行链接操作"><a href="#序列相加-使用加运算符，相同类型可以进行链接操作" class="headerlink" title="序列相加 使用加运算符，相同类型可以进行链接操作"></a>序列相加 使用加运算符，相同类型可以进行链接操作</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>] + [<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>] = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>]</span><br><span class="line"><span class="string">'Hello '</span> + <span class="string">'World'</span> = <span class="string">'Hello world'</span></span><br></pre></td></tr></table></figure>
+<h4 id="序列乘法"><a href="#序列乘法" class="headerlink" title="序列乘法"></a>序列乘法</h4><ol>
+<li><p>用数字N乘以一个序列，这个序列会被重复N次</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'python'</span> * <span class="number">5</span> = <span class="string">'pythonpythonpythonpythonpython'</span></span><br><span class="line">[<span class="number">42</span>]* <span class="number">3</span> = [<span class="number">42</span>,<span class="number">42</span>,<span class="number">42</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>None, 空列表和初始化<br>如果想创建一个占用10个元素空间，但是不含有任何内容的列表，我们可以使用None：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="keyword">None</span>] * <span class="number">10</span>  <span class="comment">#'[None,None,None,None,None,None,None,None,None,None]'</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="检查成员-使用-in"><a href="#检查成员-使用-in" class="headerlink" title="检查成员 使用 in"></a>检查成员 使用 in</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">users = [<span class="string">'mlh'</span>,<span class="string">'foo'</span>,<span class="string">'bar'</span>]</span><br><span class="line"><span class="string">'mlh'</span> <span class="keyword">in</span> users  <span class="comment">#True</span></span><br><span class="line">permission = <span class="string">'rw'</span></span><br><span class="line"><span class="string">'w'</span> <span class="keyword">in</span> permission  <span class="comment">#True</span></span><br></pre></td></tr></table></figure>
+<h4 id="长度，最小值，最大值"><a href="#长度，最小值，最大值" class="headerlink" title="长度，最小值，最大值"></a>长度，最小值，最大值</h4><p>使用内建函数：len, min, max.<br>More info: <a href="http://www.runoob.com/python/python-lists.html" target="_blank" rel="noopener">list</a></p>
 
 
     

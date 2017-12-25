@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Archives | Let Me Know</title>
+  <title>Let Me Know</title>
   <meta name="description" content="A blog of Haochuan Yang" />
   <meta name="keywords" content="blog,stkevintan,IT,Web Front End,kevinsfork" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,17 +12,18 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="Let Me Know">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="A blog of Haochuan Yang">
+  <meta name="description" content="#webpack首先，要是用该命令应该：安装全局的包‘’’bashnpm i -g webpack‘’’ 1. 首先创建package.json使用npm init, 按照步骤进行设置，最终会获得一个package.json 2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用">
 <meta name="keywords" content="blog,stkevintan,IT,Web Front End,kevinsfork">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Let Me Know">
-<meta property="og:url" content="https://yhaoch.github.io/archives/index.html">
+<meta property="og:url" content="https://yhaoch.github.io/2017/12/23/webpack/index.html">
 <meta property="og:site_name" content="Let Me Know">
-<meta property="og:description" content="A blog of Haochuan Yang">
+<meta property="og:description" content="#webpack首先，要是用该命令应该：安装全局的包‘’’bashnpm i -g webpack‘’’ 1. 首先创建package.json使用npm init, 按照步骤进行设置，最终会获得一个package.json 2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-12-23T14:20:02.718Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Let Me Know">
-<meta name="twitter:description" content="A blog of Haochuan Yang">
+<meta name="twitter:description" content="#webpack首先，要是用该命令应该：安装全局的包‘’’bashnpm i -g webpack‘’’ 1. 首先创建package.json使用npm init, 按照步骤进行设置，最终会获得一个package.json 2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -133,49 +134,54 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        
-  <article id="archive-page" class="post article white-box">
-    <section class='meta'>
-      <h2 class="title">
-        <a href="javascript:void(0)">
-          Archives
-        </a>
-      </h2>
-    </section>
-    <section class="archive">
-      
-            <div class="archive-item archive-year mark">
-              <a id="archive-year-2017" href='/archives/2017/' >
-                2017
-              </a>
-            </div>
-      
-          <div class="archive-item archive-post mark">
-            <a href="/2017/12/23/webpack/">
-              <time>12-23</time>
-              <span class="title"><span></span></span>
-            </a>
-          </div>
-      
-          <div class="archive-item archive-post mark">
-            <a href="/2017/12/23/Python总结/">
-              <time>12-23</time>
-              <span class="title"><span>Python总结</span></span>
-            </a>
-          </div>
-      
-          <div class="archive-item archive-post mark">
-            <a href="/2017/12/22/hello-world/">
-              <time>12-22</time>
-              <span class="title"><span>Hello World</span></span>
-            </a>
-          </div>
-      
-    </section>
-  </article>
-  <!--
-  
-    -->
+        <article id="post-webpack"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2017/12/23/webpack/">
+    	
+    </a>
+  </h2>
+	<time>
+	  12月 23, 2017
+	</time>
+	
+	</section>
+	
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-首先创建package-json"><span class="toc-number">1.</span> <span class="toc-text">1. 首先创建package.json</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-dependencies-各种依赖。我们可以使用npm工具帮助我们在之前生成的package-json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm-install进行辅助安装，它会自己查找package-json文件，进行安装。"><span class="toc-number">2.</span> <span class="toc-text">2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装，它会自己查找package.json文件，进行安装。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-number">3.</span> <span class="toc-text">3.</span></a></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<p>#webpack<br>首先，要是用该命令应该：安装全局的包<br>‘’’bash<br>npm i -g webpack<br>‘’’</p>
+<h2 id="1-首先创建package-json"><a href="#1-首先创建package-json" class="headerlink" title="1. 首先创建package.json"></a>1. 首先创建package.json</h2><pre><code>使用npm init, 按照步骤进行设置，最终会获得一个package.json
+</code></pre><h2 id="2-dependencies-各种依赖。我们可以使用npm工具帮助我们在之前生成的package-json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm-install进行辅助安装，它会自己查找package-json文件，进行安装。"><a href="#2-dependencies-各种依赖。我们可以使用npm工具帮助我们在之前生成的package-json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm-install进行辅助安装，它会自己查找package-json文件，进行安装。" class="headerlink" title="2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装，它会自己查找package.json文件，进行安装。"></a>2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装，它会自己查找package.json文件，进行安装。</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2>
+  	</div>
+	  
+		
+	
+		<div class="art-item-footer">
+				
+				
+					<span class="art-item-right">next：<a href="/2017/12/23/Python总结/" rel="next"  title="Python总结">
+						Python总结
+					</a><i class="icon icon-chevron-thin-right"></i></span>
+				
+		</div>
+	
+	</section>
+	
+		<section id="comments">
+			<div id="disqus_thread"></div>
+		</section>
+	
+</article>
+<script>
+	window.subData = {
+		title: '',
+		tools: true
+	}
+</script>
 
       </div>
       <aside class='l_side'>
@@ -262,11 +268,13 @@
 <script>
   var disqus_shortname = 'kevinhome';
   
+  var disqus_url = 'https://yhaoch.github.io/2017/12/23/webpack/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
