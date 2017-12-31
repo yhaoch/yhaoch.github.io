@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Webpack | Let Me Know</title>
+  <title>Music Player by ReactJs | Let Me Know</title>
   <meta name="description" content="A blog of Haochuan Yang" />
   <meta name="keywords" content="blog,stkevintan,IT,Web Front End,kevinsfork" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,18 +12,18 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="alternate" href="/atom.xml" title="Let Me Know">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Webpack是打包js模块的工具。。Webpack的特点：Code Splitting，Loaders，Clever Parsing，Plugin System 四大部分：entry，output,loader 和 plugins 初识webpack: 新建文件夹，并初始化一个package.json文件 （npm init）">
+  <meta name="description" content="首先，要是用该命令应该：安装全局的包1npm i -g webpack 1. 首先创建package.json使用npm init, 按照步骤进行设置，最终会获得一个package.json 2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装">
 <meta name="keywords" content="blog,stkevintan,IT,Web Front End,kevinsfork">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Webpack">
-<meta property="og:url" content="https://yhaoch.github.io/2017/12/23/webpack/index.html">
+<meta property="og:title" content="Music Player by ReactJs">
+<meta property="og:url" content="https://yhaoch.github.io/2017/12/31/MusicPlayer/index.html">
 <meta property="og:site_name" content="Let Me Know">
-<meta property="og:description" content="Webpack是打包js模块的工具。。Webpack的特点：Code Splitting，Loaders，Clever Parsing，Plugin System 四大部分：entry，output,loader 和 plugins 初识webpack: 新建文件夹，并初始化一个package.json文件 （npm init）">
+<meta property="og:description" content="首先，要是用该命令应该：安装全局的包1npm i -g webpack 1. 首先创建package.json使用npm init, 按照步骤进行设置，最终会获得一个package.json 2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-31T13:52:38.623Z">
+<meta property="og:updated_time" content="2017-12-31T12:40:27.619Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Webpack">
-<meta name="twitter:description" content="Webpack是打包js模块的工具。。Webpack的特点：Code Splitting，Loaders，Clever Parsing，Plugin System 四大部分：entry，output,loader 和 plugins 初识webpack: 新建文件夹，并初始化一个package.json文件 （npm init）">
+<meta name="twitter:title" content="Music Player by ReactJs">
+<meta name="twitter:description" content="首先，要是用该命令应该：安装全局的包1npm i -g webpack 1. 首先创建package.json使用npm init, 按照步骤进行设置，最终会获得一个package.json 2. dependencies 各种依赖。我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -134,45 +134,38 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        <article id="post-webpack"
+        <article id="post-MusicPlayer"
   class="post white-box article-type-post"
   itemscope itemprop="blogPost">
 	<section class='meta'>
 	<h2 class="title">
-  	<a href="/2017/12/23/webpack/">
-    	Webpack
+  	<a href="/2017/12/31/MusicPlayer/">
+    	Music Player by ReactJs
     </a>
   </h2>
 	<time>
-	  12月 23, 2017
+	  12月 31, 2017
 	</time>
 	
 	</section>
 	
-		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#初识webpack"><span class="toc-number">1.</span> <span class="toc-text">初识webpack:</span></a></li></ol></section>
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-首先创建package-json"><span class="toc-number">1.</span> <span class="toc-text">1. 首先创建package.json</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-dependencies-各种依赖。"><span class="toc-number">2.</span> <span class="toc-text">2. dependencies 各种依赖。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-number">3.</span> <span class="toc-text">3.</span></a></li></ol></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
-    	<p>Webpack是打包js模块的工具。。<br>Webpack的特点：<br>Code Splitting，Loaders，Clever Parsing，Plugin System</p>
-<p>四大部分：entry，output,loader 和 plugins</p>
-<h2 id="初识webpack"><a href="#初识webpack" class="headerlink" title="初识webpack:"></a>初识webpack:</h2><ol>
-<li>新建文件夹，并初始化一个package.json文件 （npm init）</li>
-<li></li>
-</ol>
-
+    	<p>首先，要是用该命令应该：安装全局的包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g webpack</span><br></pre></td></tr></table></figure></p>
+<h2 id="1-首先创建package-json"><a href="#1-首先创建package-json" class="headerlink" title="1. 首先创建package.json"></a>1. 首先创建package.json</h2><pre><code>使用npm init, 按照步骤进行设置，最终会获得一个package.json
+</code></pre><h2 id="2-dependencies-各种依赖。"><a href="#2-dependencies-各种依赖。" class="headerlink" title="2. dependencies 各种依赖。"></a>2. dependencies 各种依赖。</h2><pre><code>我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装，它会自己查找package.json文件，进行安装。
+</code></pre><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2>
   	</div>
 	  
 		
 	
 		<div class="art-item-footer">
 				
-					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="/2017/12/26/Python-Tuple/" rel="prev"  title="Python_Tuple">
-						Python_Tuple 
-					</a></span>
 				
-				
-					<span class="art-item-right">next：<a href="/2017/12/23/Python_List/" rel="next"  title="Python List">
-						Python List
+					<span class="art-item-right">next：<a href="/2017/12/26/Python-Tuple/" rel="next"  title="Python_Tuple">
+						Python_Tuple
 					</a><i class="icon icon-chevron-thin-right"></i></span>
 				
 		</div>
@@ -186,7 +179,7 @@
 </article>
 <script>
 	window.subData = {
-		title: 'Webpack',
+		title: 'Music Player by ReactJs',
 		tools: true
 	}
 </script>
@@ -276,7 +269,7 @@
 <script>
   var disqus_shortname = 'kevinhome';
   
-  var disqus_url = 'https://yhaoch.github.io/2017/12/23/webpack/';
+  var disqus_url = 'https://yhaoch.github.io/2017/12/31/MusicPlayer/';
   
   (function(){
     var dsq = document.createElement('script');

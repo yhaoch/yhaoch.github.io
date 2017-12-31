@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yhaoch.github.io/"/>
-  <updated>2017-12-26T03:11:01.248Z</updated>
+  <updated>2017-12-31T12:40:27.619Z</updated>
   <id>https://yhaoch.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Music Player by ReactJs</title>
+    <link href="https://yhaoch.github.io/2017/12/31/MusicPlayer/"/>
+    <id>https://yhaoch.github.io/2017/12/31/MusicPlayer/</id>
+    <published>2017-12-31T08:14:15.436Z</published>
+    <updated>2017-12-31T12:40:27.619Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先，要是用该命令应该：安装全局的包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g webpack</span><br></pre></td></tr></table></figure></p><h2 id="1-首先创建package-json"><a href="#1-首先创建package-json" class="headerlink" title="1. 首先创建package.json"></a>1. 首先创建package.json</h2><pre><code>使用npm init, 按照步骤进行设置，最终会获得一个package.json</code></pre><h2 id="2-dependencies-各种依赖。"><a href="#2-dependencies-各种依赖。" class="headerlink" title="2. dependencies 各种依赖。"></a>2. dependencies 各种依赖。</h2><pre><code>我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装，它会自己查找package.json文件，进行安装。</code></pre><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;首先，要是用该命令应该：安装全局的包&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td cla
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Python_Tuple</title>
@@ -42,15 +63,17 @@
     <link href="https://yhaoch.github.io/2017/12/23/webpack/"/>
     <id>https://yhaoch.github.io/2017/12/23/webpack/</id>
     <published>2017-12-23T12:59:00.976Z</published>
-    <updated>2017-12-25T13:20:07.390Z</updated>
+    <updated>2017-12-31T13:52:38.623Z</updated>
     
-    <content type="html"><![CDATA[<p>首先，要是用该命令应该：安装全局的包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g webpack</span><br></pre></td></tr></table></figure></p><h2 id="1-首先创建package-json"><a href="#1-首先创建package-json" class="headerlink" title="1. 首先创建package.json"></a>1. 首先创建package.json</h2><pre><code>使用npm init, 按照步骤进行设置，最终会获得一个package.json</code></pre><h2 id="2-dependencies-各种依赖。"><a href="#2-dependencies-各种依赖。" class="headerlink" title="2. dependencies 各种依赖。"></a>2. dependencies 各种依赖。</h2><pre><code>我们可以使用npm工具帮助我们在之前生成的package.json中自动添加。当然还有一些有可能需要我们手动添加依赖，但是安装可以用npm install进行辅助安装，它会自己查找package.json文件，进行安装。</code></pre><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2>]]></content>
+    <content type="html"><![CDATA[<p>Webpack是打包js模块的工具。。<br>Webpack的特点：<br>Code Splitting，Loaders，Clever Parsing，Plugin System</p><p>四大部分：entry，output,loader 和 plugins</p><h2 id="初识webpack"><a href="#初识webpack" class="headerlink" title="初识webpack:"></a>初识webpack:</h2><ol><li>新建文件夹，并初始化一个package.json文件 （npm init）</li><li></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;首先，要是用该命令应该：安装全局的包&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td cla
+        &lt;p&gt;Webpack是打包js模块的工具。。&lt;br&gt;Webpack的特点：&lt;br&gt;Code Splitting，Loaders，Clever Parsing，Plugin System&lt;/p&gt;
+&lt;p&gt;四大部分：entry，output,loader 和 plugins&lt;/p&gt;
+&lt;
       
     
     </summary>
